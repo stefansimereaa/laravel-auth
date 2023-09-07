@@ -7,7 +7,7 @@
         <h1>{{ $title }}</h1>
     </div>
 
-    {{-- APP ALERT --}}
+    {{-- App allert--}}
     @if (session('alert-message'))
         <x-app-alert type="{{ session('alert-type') ?? 'info' }}" message="{{ session('alert-message') }}" dismissable />
     @endif

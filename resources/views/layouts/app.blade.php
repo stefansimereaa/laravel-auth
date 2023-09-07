@@ -8,7 +8,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Laravel Auth') }}</title>
+    <title>{{ config('app.name', 'Laravel') }}</title>
 
 
     <!-- Fonts -->
@@ -40,12 +40,15 @@
 
 
             <x-navbar></x-navbar>
+            <x-modal></x-modal>
 
             <main class="pt-5 d-flex flex-column h-100 ">
                 @yield('content')
             </main>
         </div>
     </div>
+
+    @yield('scripts')
 </body>
 
 </html>
