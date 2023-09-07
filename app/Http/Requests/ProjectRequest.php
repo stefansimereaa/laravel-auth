@@ -25,7 +25,7 @@ class ProjectRequest extends FormRequest
             'name' => 'required|max:80',
             'url' => 'nullable|max:80|url',
             'github_url' => 'nullable|max:80|url:https',
-            'thumbnail' => 'nullable|max:80|url',
+            'thumbnail' => 'nullable|image:jpg:jpeg:png:webp',
             'description' => 'required',
         ];
     }
