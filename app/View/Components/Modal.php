@@ -1,18 +1,17 @@
 <?php
 
-namespace App\View\Components\Admin\Projects;
+namespace App\View\Components;
 
-use App\Models\Project;
 use Closure;
 use Illuminate\Contracts\View\View;
 use Illuminate\View\Component;
 
-class DeleteProject extends Component
+class Modal extends Component
 {
     /**
      * Create a new component instance.
      */
-    public function __construct(public Project $project, public bool $compact = false)
+    public function __construct()
     {
         //
     }
@@ -22,6 +21,6 @@ class DeleteProject extends Component
      */
     public function render(): View|Closure|string
     {
-        return view('components.admin.projects.delete-project');
+        return view('components.modal');
     }
 }
