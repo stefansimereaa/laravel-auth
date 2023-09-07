@@ -73,7 +73,7 @@ class ProjectsController extends Controller
 
         // storing the image
         if (array_key_exists('thumbnail', $data)) {
-            // if there was already an image delete that image
+
             if ($project->thumbnail) {
                 Storage::delete($project->thumbnail);
             }
@@ -93,7 +93,7 @@ class ProjectsController extends Controller
      */
     public function destroy(Project $project)
     {
-        // remember the project name to later send it in the message
+
         $project_name = $project->name;
 
         // delete the thumbnail if present
